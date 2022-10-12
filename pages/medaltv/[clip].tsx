@@ -27,7 +27,7 @@ const ClipPage: NextPage<Props> = ({ id, clip, error }) => {
         </title>
         <meta name="twitter:card" content="player" />
         <meta name="twitter:title" content={clip.contentTitle} />
-        <meta name="twitter:site" content="@BallisticOK">
+        <meta name="twitter:site" content="@BallisticOK" />
         <meta name="twitter:image" content={clip.contentThumbnail} />
         <meta name="twitter:url" content={`${host}/medaltv/${id}`} />
         <meta name="twitter:player" content={clip.directClipUrl} />
