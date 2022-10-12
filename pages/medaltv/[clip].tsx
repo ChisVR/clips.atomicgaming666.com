@@ -25,17 +25,30 @@ const ClipPage: NextPage<Props> = ({ id, clip, error }) => {
         <title>
           {clip.contentTitle} - Ballistic's MedalTV Clips
         </title>
-        <meta name="twitter:card" content="photo" />
+        <meta name="twitter:card" content="player" />
         <meta name="twitter:title" content={clip.contentTitle} />
+        <meta name="twitter:site" content="@BallisticOK">
         <meta name="twitter:image" content={clip.contentThumbnail} />
         <meta name="twitter:url" content={`${host}/medaltv/${id}`} />
+        <meta name="twitter:player" content={clip.directClipUrl} />
+        <meta name="twitter:player:width" content="620" />
+        <meta name="twitter:player:height" content="378" />
 
         <meta property="og:title" content={clip.contentTitle} />
         <meta property="og:type" content="website" />
         <meta property="og:image" content={clip.contentThumbnail} />
+        
+        <meta property="og:type" content="video.other" />
+        <meta property="og:video" content={clip.directClipUrl} />
+        <meta property="og:video:url" content={clip.directClipUrl} />
+        <meta property="og:video:secure_url" content={clip.directClipUrl} />
+        <meta property="og:video:type" content="text/html" />
+        <meta property="og:video:width" content="620" />
+        <meta property="og:video:height" content="378" />
+        
         <meta
           property="og:site_name"
-          content="ChisVR - Streamer / Developer"
+          content="BallisticOK - Streamer / Developer / Content Creator"
         />
         <meta property="og:description" content={clip.contentTitle} />
 
